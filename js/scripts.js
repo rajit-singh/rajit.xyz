@@ -73,7 +73,8 @@ function initCursor() {
         /* I have removed the 'mousemove' event listener here.
            This stops the button from shifting/moving when you hover.
         */
-});
+    });
+}
 
 // Initialize on page load
 window.addEventListener('DOMContentLoaded', () => {
