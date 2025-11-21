@@ -31,9 +31,9 @@ Since this is a static site, no build process is required.
 
 **Clone the repository**
 
-git clone https://github.com/yourusername/portfolio.git
-
-text
+```
+git clone git@github.com:rajit-singh/rajit.xyz.git
+```
 
 **Open the site**
 
