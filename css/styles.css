@@ -319,19 +319,6 @@ body::before {
 .link:hover {
     border-color: var(--text-color);
     color: var(--hover-text);
-    transform: translateX(4px);
-}
-
-.link:hover .arrow {
-    transform: translateX(5px);
-}
-
-.link:hover .link-text {
-    letter-spacing: 0.04em;
-}
-
-.link:active {
-    transform: translateX(2px) scale(0.98);
 }
 
 .link-text {

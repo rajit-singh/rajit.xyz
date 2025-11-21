@@ -58,6 +58,7 @@ function initCursor() {
     animateCursor();
 
     // Magnetic effect on interactive elements
+    // Magnetic effect on interactive elements
     links.forEach(link => {
         link.addEventListener('mouseenter', () => {
             cursor.classList.add('hover');
@@ -69,24 +70,10 @@ function initCursor() {
             follower.classList.remove('hover');
         });
 
-        link.addEventListener('mousemove', (e) => {
-            const rect = link.getBoundingClientRect();
-            const relX = e.clientX - rect.left;
-            const relY = e.clientY - rect.top;
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            
-            const deltaX = (relX - centerX) * 0.05;
-            const deltaY = (relY - centerY) * 0.05;
-            
-            link.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
-        });
-
-        link.addEventListener('mouseleave', () => {
-            link.style.transform = 'translate(0, 0)';
-        });
-    });
-}
+        /* I have removed the 'mousemove' event listener here.
+           This stops the button from shifting/moving when you hover.
+        */
+});
 
 // Initialize on page load
 window.addEventListener('DOMContentLoaded', () => {
